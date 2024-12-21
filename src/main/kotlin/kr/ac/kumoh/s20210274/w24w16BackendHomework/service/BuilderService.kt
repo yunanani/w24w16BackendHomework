@@ -6,17 +6,16 @@ import org.springframework.stereotype.Service
 @Service
 class BuilderService(private val repository: BuilderRepository) {
 
-    // 새로운 곡 추가
     fun addBuilder(builder:BuilderModel ): BuilderModel = repository.save(builder)
 
-    // 모든 곡 조회
+
     fun getAllBuilder(): List<BuilderModel> = repository.findAll()
 
-    // id로 곡 조회
+
     fun getBuilderById(id: String): BuilderModel? = repository.findById(id).orElse(null)
 
 
-    // 곡 정보 수정
+
     fun updateBuilder(id: String, builder: BuilderModel): BuilderModel? {
         val BuilderTarget = repository.findById(id)
 
