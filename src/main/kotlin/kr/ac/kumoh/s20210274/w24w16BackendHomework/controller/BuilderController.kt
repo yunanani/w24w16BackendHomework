@@ -23,7 +23,7 @@ class BuilderController(private val service: BuilderService) {
 
 
     @DeleteMapping("/{id}")
-    fun deletebuilder(@PathVariable id: String): Map<String, String> {
+    fun deleteBuilder(@PathVariable id: String): Map<String, String> {
         return if (service.deleteBuilder(id))
             mapOf("status" to "deleted")
         else
