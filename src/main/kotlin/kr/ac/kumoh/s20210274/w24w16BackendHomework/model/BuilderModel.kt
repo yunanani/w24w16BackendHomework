@@ -12,5 +12,5 @@ data class BuilderModel(
     val rating: Int,
     val numberOfSubscribers: String,
     val career: String,
-    val imageUrl: String? // 이미지 URL 필드 추가
+    val imageUrl: String?
 )

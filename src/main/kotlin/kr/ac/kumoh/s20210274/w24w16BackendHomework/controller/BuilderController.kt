@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/api/builder")
-@CrossOrigin(origins=["https://wsp2024builderfrontend.netlify.app"]) // 프론트엔드 주소 설정
+@CrossOrigin(origins=["https://wsp2024builderfrontend.netlify.app"])
 class BuilderController(private val service: BuilderService) {
 
     @PostMapping

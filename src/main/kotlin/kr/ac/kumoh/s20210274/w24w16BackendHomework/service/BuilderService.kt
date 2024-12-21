@@ -35,7 +35,6 @@ class BuilderService(private val repository: BuilderRepository) {
         }
     }
 
-    // 곡 삭제
     fun deleteBuilder(id: String): Boolean {
         return if (repository.existsById(id)) {
             repository.deleteById(id)
