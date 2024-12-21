@@ -4,4 +4,5 @@ import org.springframework.data.mongodb.repository.MongoRepository
 
 interface BuilderRepository : MongoRepository<BuilderModel, String> {
     // Custom query methods can be added here if needed
+
 }
